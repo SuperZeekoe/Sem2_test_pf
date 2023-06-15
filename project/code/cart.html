@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="icon" type="img/x-icon" href="./favIcon/favIcon.png" />
+    <script defer src="./js/script.js"></script>
+    <title>Cart</title>
+    <script
+      src="https://kit.fontawesome.com/52863253ca.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <a href="index.html">
+        <img src="img/logo.png" class="logo" alt="logo"
+      /></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About me</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropbtn">Work &#9662;</a>
+          <div class="dropdown-content">
+            <a href="./paintings.html">Paintings</a>
+            <a href="./sculptures.html">Sculptures</a>
+            <a href="./toys.html">Toys</a>
+            <a href="./photography.html">Photography</a>
+            <a href="./drawings.html">Drawings</a>
+          </div>
+        </li>
+        <li><a href="./shop.html">Shop</a></li>
+        <li>
+          <a class="cartIcon" href="./cart.html">
+            <i class="fa-solid fa-cart-shopping"> </i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main class="cartNo">
+      <p>Seems like you have a empty cart</p>
+      <a href="./shop.html">Shop</a>
+    </main>
+    <main class="cartFilled">
+      <h3 id="cart-title">Cart</h3>
+      <div id="cart-container">
+        <div id="cart-page-left">
+          <div id="cart-items"></div>
+          <hr />
+          <div id="cart-grabber">
+            <div id="cart-summary-title">Total:</div>
+            <div id="cart-summary">$10.000.000,-</div>
+          </div>
+        </div>
+        <div id="cart-page-right">
+          <h3>Check-out</h3>
+          <div id="cart-info">
+            <form>
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="last-name" />
+              <input type="text" placeholder="Address" />
+              <input type="text" placeholder="City" />
+              <input type="text" placeholder="Country" />
+              <input type="text" placeholder="E-mail" />
+            </form>
+            <input type="submit" value="Checkout" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div id="left">
+        <img src="./img/logo.png" alt="logo" />
+        <div id="contact">
+          <a href="#">E-mail</a>
+          <a href="#">Phone Number</a>
+          Based in Athens, Greece
+        </div>
+      </div>
+      <div id="right">
+        <div id="social">
+          <h2>Socials</h2>
+          <a
+            href="https://www.facebook.com/profile.php?id=100064099476681"
+            target="_blank"
+          >
+            <i class="fab fa-facebook-square"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/artnsilence_vinyl_clocks/"
+            target="_blank"
+          >
+            <i class="fab fa-instagram-square"></i>
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UCLjQrw0QP24jd-WZNKPmwTg"
+            target="_blank"
+          >
+            <i class="fab fa-youtube-square"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

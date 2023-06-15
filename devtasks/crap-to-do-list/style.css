@@ -1,0 +1,147 @@
+@font-face {
+    font-family: 'turds soft';
+    src: url('./fonts/turdssoft.woff2') format('woff2'),
+        url('./fonts/turdssoft.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'turds';
+    src: url('./fonts/turds.woff2') format('woff2'),
+        url('./fonts/turds.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: '<PAPER FOR YOUR ASS>';
+    src: url('./fonts/PAPERFORYOURASS.woff2') format('woff2'),
+        url('./fonts/PAPERFORYOURASS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #441d17e1;
+    color: white;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f100; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #411c1c; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #613e3e; 
+  }
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+}
+
+ul {
+    border-radius: 15px;
+    background-color: rgb(75, 75, 75);
+    padding: 20px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: drop-shadow(20px 10px 10px #3f3f3f);
+    color: black;
+}
+
+.delete {
+    margin-left: 10px;
+}
+
+#color-brown {
+    color: #311512;
+    font-family: turds;
+}
+
+#formInput {
+    display: flex;
+    flex-direction: column;
+}
+
+#formInput input { 
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+#formInput button {
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    transition: 500ms;
+    height: 200px;
+    width: auto;
+    background-color: #441d17e1;
+    background-image: url(poopemoji-removebg-preview.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+#formInput button:hover {
+    background-color: #441d1771;
+    color: white;
+}
+
+#title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: turds;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    font-family: turds soft;
+    color: white;
+}
+
+.delete {
+    cursor: pointer;
+    transition: 500ms;
+    background-color: #441d17e1;
+    /* background-image: url(poopemoji-removebg-preview.png); */
+    background-repeat: no-repeat;
+    color: red;
+}
+
+.delete:hover {
+    background-color: #441d17e1;
+    color: white;
+}

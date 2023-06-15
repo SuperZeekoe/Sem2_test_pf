@@ -1,0 +1,295 @@
+/* ////////////// */
+/* Layout 1 */
+/* body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgb(99, 99, 99), #ffffff );
+    color: white;
+    overflow: hidden;
+}
+
+.nav1 {
+    width: 100vw;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-right: 30px;
+    position: absolute;
+    top:0;
+    left: 0;
+    font-size: 30px;
+}
+.nav1 a {
+    width: 30px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 30px 0 30px;
+}
+.nav1 .nav-right {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    color: grey;
+    text-decoration: none;
+}
+
+.nav1 .nav-left {
+    display: flex;
+    flex-direction: row; 
+}
+
+.nav1 .nav-left a {
+    background-color: grey;
+    width: 200px;
+    left:0;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.nav1 a:visited { 
+    text-decoration: none; 
+}
+
+
+.m-one {
+    position: absolute;
+    z-index: 1;
+    font-size: 600px;
+    color: rgba(255,255,255,0.5);
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -55%);
+    margin: 0;
+}
+
+.p-one {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    font-size: 5rem;
+    width: 30%;
+    margin-left: 15%;
+} */
+
+
+
+/* ////////////// */
+/* Layout 2 */
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+    to right,
+    white 0%,
+    white 50%,
+    rgb(158, 158, 158) 50%,
+    rgb(158,158,158) 100%
+  );
+    color: white;
+    overflow: hidden;
+}
+
+.nav1 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-right: 30px;
+    position: absolute;
+    top:10;
+    left: 0;
+    font-size: 30px;
+}
+.nav1 a {
+    width: 100px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 10px 40px 10px 40px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+    text-align: center;
+    color: white;
+}
+.nav1 .nav-right {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: auto;
+    color: grey;
+    text-decoration: none;
+}
+
+.nav1 .nav-left {
+    display: none;
+}
+
+.nav1 .nav-left a {
+    background-color: grey;
+    width: 200px;
+    left:0;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.nav1 a:visited { 
+    text-decoration: none; 
+}
+
+.m-one {
+    position: absolute;
+    font-size: 450px;
+    color: white;
+    top:50%;
+    left:50%;
+    padding: 0;
+    margin: 0;
+    transform: translate(-50%, -50%);
+}
+
+.m-one::before {
+    content: attr(data-text);
+    position: absolute;
+    width: 50%;
+    overflow: hidden;
+    color: grey;
+}
+
+.text-boxes {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75%;
+    width: 100%;
+    justify-items: center;
+    font-size: 40px;
+    z-index: 2;
+}
+
+.p-one {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    color: grey;
+    padding: 75px;
+}
+
+.p-two {
+    grid-row: 2 / 2;
+    grid-column: 2 / 2;
+    padding: 75px;
+    color: black;
+}
+
+
+
+/* ////////////// */
+/* Layout 3 */
+
+/* body {
+    width: 100vw;
+    height: 100vh;
+    background: grey;
+    color: white;
+    overflow: hidden;
+}
+
+.nav1 {
+    width: 100vw;
+    height: 60px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 30px;
+    margin-right: 30px;
+    position: absolute;
+    top:0;
+    left: 0;
+    font-size: 30px;
+}
+.nav1 a {
+    width: 30px;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 50px 0 50px;
+    color: grey;
+}
+.nav1 .nav-right {
+    display: flex;
+    margin-left: auto;
+    color: grey;
+    text-decoration: none;
+}
+
+.nav1 .nav-left {
+    display: none;
+}
+
+.nav1 .nav-left a {
+    background-color: grey;
+    width: 200px;
+    left:0;
+    margin: 0;
+    padding: 15px;
+    text-align: center;
+    color: white;
+}
+.nav1 a:visited { 
+    text-decoration: none; 
+}
+
+.m-one {
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-60%);
+    font-size: 300px;
+}
+
+.p-one, .p-two {
+    display: none;
+}
+
+.footer-one {
+    background-color: white;
+    height: 200px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    z-index: 2;
+    left:0;
+}
+
+.grid-one {
+    position: absolute;
+    display: flex;
+    left: 0;
+    z-index: 4;
+    height: 40%;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    top: 50%;
+    text-align: center;
+    justify-items: center;
+}
+.grid-one segment {
+    width: 20%;
+    background-color: rgb(187, 187, 187);
+    border: 1px solid black;
+    display: flex;
+    margin-left: 10%;
+    text-align: center;
+} */

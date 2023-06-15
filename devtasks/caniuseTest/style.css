@@ -1,0 +1,82 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    /* background-size: 620px 410px;
+    background-repeat: no-repeat;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/02/03/27/53/1000_F_203275317_FjB3VUNQ085ja7opvp27ue0pViq1bAIg.jpg'), url('./images/profiletest-removebg-preview.png');
+    background-blend-mode: hard-light, luminosity; */
+    background-color: rgb(244, 244, 244);
+    overflow: hidden;
+}
+
+div {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down;
+    background-size: 50% 50%;
+    display: flex;
+    font-size: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('./images/white-abstract-background-painting_145343-1360.avif');
+    background-blend-mode: hard-light, luminosity;
+    object-fit: fill;
+}
+/* url(./images/profiletest-removebg-preview.png); */
+/* url('https://as2.ftcdn.net/v2/jpg/02/03/27/53/1000_F_203275317_FjB3VUNQ085ja7opvp27ue0pViq1bAIg.jpg'),  */
+
+.top {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: 0;
+}
+
+.top h1 {
+    margin:0;
+    font-size: 200px;
+    -webkit-animation: tracking-in-expand-fwd-top 2.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd-top 2.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd-top {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px) translateY(-500px);
+              transform: translateZ(-700px) translateY(-500px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0) translateY(0);
+              transform: translateZ(0) translateY(0);
+      opacity: 1;
+    }
+  }
+
+.top h2 {
+    margin:0;
+    margin-top: 10%;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    text-align: right;
+}

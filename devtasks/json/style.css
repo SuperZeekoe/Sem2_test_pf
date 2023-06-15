@@ -1,0 +1,68 @@
+/* ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    background-color: #333;
+} */
+
+body {
+    background-color: rgba(32,32,32,1);
+}
+
+#peoplepage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    height: 100%;
+}
+
+#peoplepage>div {
+    width: 20%;
+    height: auto;
+    margin: 5%;
+    border: 3px solid #eec842;
+    border-radius: 15px;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+    box-shadow: 4px 4px 24px -9px rgba(212,26,212,0.6);
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    width: auto;
+    height: auto;
+    
+}
+
+.container img {
+    width: 100%;
+    object-fit: fill;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.container #name {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    color: white;
+    background-color: rgba(32,32,32,0.7);
+    opacity: 0;
+    width: 100%;   
+    transition: 300ms cubic-bezier(0.4, 0, 1, 1);
+}
+
+.container img:hover  +#name{
+    background-color: rgba(32,32,32,0.9);
+    opacity: 1;
+    transition: 300ms cubic-bezier(0.4, 0, 1, 1);
+}

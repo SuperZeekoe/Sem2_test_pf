@@ -1,0 +1,491 @@
+/* //////////////////// */
+/* FONTS */
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/BebasNeue-Regular.woff') format('woff'),
+        url('../fonts/BebasNeue-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Gruppo';
+    src: url('../fonts/Gruppo.woff2') format('woff2'),
+        url('../fonts/Gruppo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Libre Barcode 39 Text';
+    src: url('../fonts/LibreBarcode39Text-Regular.woff2') format('woff2'),
+        url('../fonts/LibreBarcode39Text-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Good Times Rg';
+    src: url('../fonts/GoodTimesRg-Regular.woff2') format('woff2'),
+        url('../fonts/GoodTimesRg-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+/* ///////////////////// */
+/* Main styling */
+
+body {
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(39, 32, 69);  */
+    background-color: rgb(32, 32, 32);
+    margin: 0rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+
+/* /////////////// */
+/* Front page */
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.img-container {
+    position: relative;
+    text-align: center;
+    color:white;
+    
+}
+
+.img-container>img {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: 100% 50%;
+    cursor: pointer;
+    border: 2px solid rgb(233,81,81);
+    transition: 500ms ease-in-out;
+    -webkit-box-shadow:0px 0px 84px 0px rgba(233,81,81,0.24);
+    -moz-box-shadow: 0px 0px 84px 0px rgba(233,81,81,0.24);
+    box-shadow: 0px 0px 30px 0px rgba(233,81,81,0.24);
+    user-select: none;
+    /* filter: drop-shadow(0px 0px 5px #000); */
+
+}
+
+/* Layering h2 on top of image centered */
+.img-container>h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: white;
+    text-shadow: 2px 2px 4px #000000;
+    transition: 500ms ease-in-out;
+    font-family: 'Bebas Neue';
+    letter-spacing: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.img-container>img:hover + h2{
+    color: rgb(238, 200, 66);
+    text-decoration-color: white;
+}
+
+
+#centerGuide {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+}
+
+/* //////////////////// */
+/* Footer */
+.ab_footer {
+    position: fixed;
+    bottom: 0px;
+    right: 15px;
+    font-family: 'Bebas Neue';
+    /* font-family: 'Libre Barcode 39 Text'; */
+    letter-spacing: 4px;
+}
+.ab_footer>ul>li {
+    list-style: none;
+    color: white;
+}
+.ab_footer>ul>li>a {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255,0);
+    font-size: 1.5rem;
+    transition: 500ms ease-in-out;
+}
+
+.ab_footer>ul>li>a:hover {
+    color: rgb(238, 200, 66);
+    text-decoration: underline;
+    text-decoration-color: rgba(255,255,255,1);
+    transition: 500ms ease-in-out;
+}
+
+
+
+/* IDEA: Click image -> page scrolls down -> return button returns to base */
+/* Per image, think about positioning.  */
+
+
+
+/* ////////////////////// */
+/* content pages */
+
+.taskOverview {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    top: 1920;
+    
+}
+
+/* Main content form, flexed in column */
+.taskContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+    text-shadow: 1px 2px 0px rgba(0,0,0,0.5);
+    row-gap: 2rem;
+    height: 100vh;
+    width: auto;
+    margin: 0% 25% 3% 25%;
+    color:white;
+    z-index: 2;
+    position: absolute;
+    top: 15%;
+    /* filter: drop-shadow(4px 8px 16px #585858); */
+}
+.taskContent>h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 0.4rem;
+    font-family: 'Good Times Rg';
+    text-align: center;
+    margin: 0;
+    text-decoration: underline;
+    text-decoration-color: rgba(238, 200, 66, 1);
+    filter: drop-shadow(0px 0px 10px #e95151);
+    -webkit-animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+#taskLists {
+    /* column-gap: 5rem;
+    columns: 2; */
+    /* list-style-type: none; */
+    width: auto;
+    font-size: 1.5rem;
+}
+#taskLists>ul {
+    padding: 0;
+    margin: 0 10% 0 10%;
+    width: 100%;
+    /* list-style-type: none; */
+    text-decoration: none;
+    /* text-underline-position: under;
+    text-decoration-color: rgba(238, 200, 66, 1); */
+    
+}
+
+
+#taskLists>ul>li {
+    padding: 10px;
+}
+
+/* Button styling */
+#taskButtons {
+    display: flex;
+    flex-direction: row ;
+    width: 70%;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 5rem;
+    margin-top: 5%;
+}
+#taskButtons>a {
+    width: 175px;
+    height: 45px;
+    border: 3px solid white;
+    background-color: rgba(255,255,255,0);
+    font-size: 1.1rem;
+    font-weight: bolder;
+    color:white;
+    cursor: pointer;
+    transition: 0.5s ease;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#taskButtons>#buttonLeft:hover {
+    box-shadow: inset 0px -50px 0px 0 rgba(238, 201, 66, 1);
+    color: black;
+    text-decoration-color: rgba(82, 123, 184, 0.9);
+    border: 3px solid #e95151;
+    transition: 0.5s ease;
+  }
+#taskButtons>#buttonRight:hover {
+    box-shadow: inset 0px -50px 0px 0 #e95151;
+    border: 3px solid rgba(238,201,66,1);
+    transition: 0.5s ease;
+}
+
+
+/* ////////////////////// */
+/* About */
+
+
+.aboutOverview {
+    height: 75%;
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin: 2.5% 12.5% 0 12.5%;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+}
+#aboutTitle {
+    font-family: 'Good Times Rg';
+    display: flex;
+    justify-content: center;
+    color: white;
+    letter-spacing: 1.1rem;
+    margin-top: 3.5%;
+    filter: drop-shadow(0px 0px 15px #e95151);
+    text-align: center;
+    -webkit-animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+/* Letter movement headers */
+@keyframes tracking-in-expand {
+    0% {
+      letter-spacing: -0.5em;
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+#aboutSeg1, #aboutSeg2, #aboutSeg3, #aboutSeg4 {
+    display: grid;
+    align-content: center;
+    width: 20%;
+}
+
+#aboutSeg2{
+    background-image: url(../images/profiletest.JPG);
+    width: 500px;
+    aspect-ratio: 9 / 16;
+    border: 3px solid rgba(238,201,66,1);
+    filter: drop-shadow(0px 0px 10px #e95151);
+    padding: 10px;
+    background-size: cover;
+    background-position: 0% 0%;
+    animation: pan-image 10s linear infinite;
+}
+
+article>ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 30px;
+    list-style: none;
+    text-decoration: underline;
+    text-decoration-color: rgba(238, 201, 66, 1);
+}
+
+/* Logo styling + linking */
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 450px;
+    /* filter: drop-shadow(0px 0px 10px #e95151); */
+    user-select: none;
+}
+.logo-link{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 470px;
+    height: 140px;
+}
+
+#home-logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media screen and (max-width: 1622px) {
+    .logo {
+        width: 350px;
+    }
+    .logo-link {
+        width: 370px;
+        height: 100px;
+    }
+    #home-logo {
+        width: 350px;
+    }
+}
+
+/* About page image movement */
+/* Currently just an idea to work around */
+@keyframes pan-image {  
+    0% {
+      background-position: 36% 42%;
+      background-size: 100%;
+    }
+    
+    20% {
+      background-position: 30% 35%;
+      background-size: 100%;
+    }
+    
+    20.0001% { /* -- View 2 -- */
+      background-position: 60% 85%;
+      background-size: 200%;
+    }
+    
+    40% {
+      background-position: 49% 81%;
+      background-size: 200%;
+    }
+    
+    40.0001% { /* -- View 3 -- */
+      background-position: 80% 42%;
+      background-size: 250%;
+    }
+    
+    60% {
+      background-position: 84% 33%;
+      background-size: 250%;
+    }
+    
+    60.0001% { /* -- View 4 -- */
+      background-position: 0% 0%;
+      background-size: 250%;
+    }
+    
+    80% {
+      background-position: 15% 4%;
+      background-size: 250%;
+    }
+    
+    80.0001% { /* -- View 5 -- */
+      background-position: 80% 10%;
+      background-size: 300%;
+    }
+    
+    100% {
+      background-position: 0% 0%;
+      background-size: 75%;
+    }
+  }
+
+
+/* ////////////////////// */
+/* Contact */
+
+#contactHeader {
+    font-family: 'Good Times Rg';
+    display: flex;
+    justify-content: center;
+    color: white;
+    letter-spacing: 1.1rem;
+    margin-top: 3.5%;
+    filter: drop-shadow(0px 0px 15px #e95151);
+    text-align: center;
+    -webkit-animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand 1.4s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;           
+}
+
+#contactPage {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin: 12.5% 12.5% 0 12.5%;
+    font-family: 'Roboto';
+    letter-spacing: 1px;
+    line-height: 1.3rem;
+}
+#contactPage a {
+    color: white;
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: rgba(238, 200, 66, 1);
+}
+
+/* ///////////////// */
+/* Logo iterations */
+
+#iteration1, #iteration2, #iteration3 {
+    display: grid;
+    align-content: center;
+    width: 20%;
+    aspect-ratio: 9 / 16;
+    border: 3px solid rgba(238,201,66,1);
+    filter: drop-shadow(0px 0px 10px #e95151);
+    padding: 10px;
+    background-size: cover;
+    background-position: 0% 0%;
+}
+
+#iteration3 {
+    background-image: url(../images/logo_iterations.JPG);
+}
+#iteration1 {
+    background-image: url(../images/logo_iterations2.JPG);
+}
+#iteration2 {
+    background-image: url(../images/logo_iterations3.JPG);
+}
