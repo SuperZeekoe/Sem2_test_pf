@@ -220,6 +220,10 @@ function backbtn1() {
   });
 }
 
+// Dirtiest way of doing things, but it works.
+// Couldn't figure out without causing a ton of stress how to simplify this.
+// And I kind of refuse to use AI to fix it for me.
+// Next semester I'll be better at this and for the next portfolio website I won't be having a dumb one-pager idea.
 // SWITCH BUTTONS sub-CONTENT
 const subContent1 = document.getElementById("sub-contentLink1");
 const subContent2 = document.getElementById("sub-contentLink2");
